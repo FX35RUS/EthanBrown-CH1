@@ -4,20 +4,10 @@ $(document).ready(function() {
   paper.setup(document.getElementById("mainCanvas"));
 
   //TODO
-  /*var c=Shape.Circle(0,200,50);
-    c.fillColor="green";*/
 
-  /*var c;
-    for (let x = 25; x < 400; x+=50) {
-        for (let y = 25; y < 400; y+=50) {
-            c=Shape.Circle(x,y,20);
-            c.fillColor="green";
-        }
-    }*/
-
-  var colorCircle=["red","green","blue","black"];
+  var colorCircle = ["red", "green", "blue", "black"];
   var fillColor;
-  var i=0;
+  var i = 0;
   var tool = new Tool();
   var c = Shape.Circle(200, 200, 80);
   c.fillColor = "black";
@@ -25,24 +15,22 @@ $(document).ready(function() {
   text.justification = "center";
   text.fillColor = "white";
   text.fontSize = 20;
-  text.content = "Hello WORLD!";
+  text.content = "Hello МИР!";
 
   tool.onMouseDown = function(event) {
-    var c = Shape.Circle(event.point, 20);
-      
-    fillColor=colorCircle[i]
-    console.log(i+" "+fillColor+" начало обработки");
-    c.fillColor = fillColor;
+    var c = Shape.Circle(event.point, 10);
 
-    if (i<colorCircle.length-1) {
+    fillColor = colorCircle[i];
+    c.fillColor = fillColor;
+    if (i < colorCircle.length - 1) {
       i++;
-    }   
-    else i=0;
-    console.log(i+" "+fillColor+" конец обработки");
+    } else i = 0;
+
+    var b="request";
   };
 
   paper.view.draw();
-  console.log("main.js loaded");
+
 });
 
-console.log("main.js loaded");
+
