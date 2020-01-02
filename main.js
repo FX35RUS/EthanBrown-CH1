@@ -15,9 +15,9 @@ $(document).ready(function() {
         }
     }*/
 
-  var colorCircle=["red","green","blue","black"];
+  var colorCircle = ["red", "green", "blue", "black"];
   var fillColor;
-  var i=0;
+  var i = 0;
   var tool = new Tool();
   var c = Shape.Circle(200, 200, 80);
   c.fillColor = "black";
@@ -29,20 +29,14 @@ $(document).ready(function() {
 
   tool.onMouseDown = function(event) {
     var c = Shape.Circle(event.point, 20);
-      
-    fillColor=colorCircle[i]
-    console.log(i+" "+fillColor+" начало обработки");
-    c.fillColor = fillColor;
 
-    if (i<colorCircle.length-1) {
-      i++;
-    }   
-    else i=0;
-    console.log(i+" "+fillColor+" конец обработки");
+    fillColor = colorCircle[i];
+    c.fillColor = fillColor;
+    if (i < colorCircle.length - 1) i++;
+    else i = 0;
   };
 
   paper.view.draw();
-  console.log("main.js loaded");
 });
 
-console.log("main.js loaded");
+
