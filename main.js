@@ -4,10 +4,6 @@ $(document).ready(function() {
   paper.setup(document.getElementById("mainCanvas"));
 
   //TODO
-<<<<<<< HEAD
- 
-  var colorCircle = ["red", "green", "blue", "black"];
-=======
   /*var c=Shape.Circle(0,200,50);
     c.fillColor="green";*/
 
@@ -20,7 +16,6 @@ $(document).ready(function() {
     }*/
 
   var colorCircle=["red","green","blue","black"];
->>>>>>> parent of 4a7605b... Update main.js
   var fillColor;
   var i=0;
   var tool = new Tool();
