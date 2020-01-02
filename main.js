@@ -4,17 +4,7 @@ $(document).ready(function() {
   paper.setup(document.getElementById("mainCanvas"));
 
   //TODO
-  /*var c=Shape.Circle(0,200,50);
-    c.fillColor="green";*/
-
-  /*var c;
-    for (let x = 25; x < 400; x+=50) {
-        for (let y = 25; y < 400; y+=50) {
-            c=Shape.Circle(x,y,20);
-            c.fillColor="green";
-        }
-    }*/
-
+ 
   var colorCircle = ["red", "green", "blue", "black"];
   var fillColor;
   var i = 0;
